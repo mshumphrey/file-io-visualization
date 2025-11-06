@@ -180,7 +180,7 @@
     System.out.println("File already exists.");
   }
 } catch (IOException e) {
-  e.printStackTrace();
+  System.out.println("Error creating file");
 }</code></pre>
     </div>
         <!-- Write Snippet --><div id="code-write" class="code-block" style="display: none;">
@@ -188,8 +188,7 @@
   myWriter.write("I am so sick at coding :)");
   System.out.println("Successfully wrote.");
 } catch (IOException e) {
-  System.out.println("An error occurred.");
-  e.printStackTrace();
+  System.out.println("An error occurred when writing to the file.");
 }</code></pre>
     </div>
         <!-- Read Snippet --><div id="code-read" class="code-block" style="display: none;">
@@ -199,8 +198,7 @@
     System.out.println(data);
   }
 } catch (FileNotFoundException e) {
-  System.out.println("An error occurred.");
-  e.printStackTrace();
+  System.out.println("An error occurred when reading from the file.");
 }</code></pre>
     </div>
         <!-- Delete Snippet --><div id="code-delete" class="code-block" style="display: none;">
